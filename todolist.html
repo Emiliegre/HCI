@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.rectangle {
+  margin-top:100px;
+  height: 500px;
+  width: 900px;
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overskrift{
+    padding-top: 50px;
+}
+
+.input {
+  text-align: center;
+  
+    
+}
+
+.bar{
+    height: 40px;
+    width: 500px;
+
+}
+
+.button {
+    background-color:#85AEDE; 
+    color: white;
+    margin-left: 5px;
+    height: 45px;
+    width: 45px;
+    border-color: #85AEDE;
+    
+    
+}
+
+.todo-checkbox{
+    magin-right: 500px;
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+.todo-checkbox
+
+ 
+}
+
+</style>
+</head>
+<body style='background-color:#85AEDE;'>
+
+<div class="rectangle">
+
+<form class = "input" action="/action_page.php">
+  <h3 class = "overskrift" >TODOLIST<h3>
+  <input class = "bar" type="text" id="todo" name="todo"><input class = "button" type="submit" value="+"><br>
+</form>
+
+<div>
+  <input type="checkbox"
+         class="todo-checkbox"
+         (click)="completeItem()"/>
+  Read the book
+</div>
+
+<div>
+  <input type="checkbox"
+         class="todo-checkbox"
+         (click)="completeItem()"/>
+  call my parents
+</div>
+
+
+
+
+</div>
+
+
+</body>
+</html> 
