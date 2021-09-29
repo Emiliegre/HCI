@@ -1,9 +1,13 @@
 # HCI
 Aflevering
 
-Aflevering
+Git make a new branch:
+git checkout -b <branchnavn>
 
-Git legge til:
+Bytte mellom forskjellige branches
+git checkout <branchnavn>
+
+Git add work:
 
 Steg 1:     git add -A
 
