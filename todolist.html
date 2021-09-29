@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .rectangle {
-  margin-top:1000px;
+  margin-top:100px;
   height: 500px;
   width: 900px;
   background-color: white;
@@ -39,6 +39,9 @@
     
     
 }
+.button:hover {
+    cursor: pointer;
+}
 
 .todo-checkbox{
     magin-right: 500px;
@@ -48,8 +51,6 @@
 }
 .todo-checkbox
 
- 
-}
 
 </style>
 </head>
@@ -59,7 +60,8 @@
 
 <form class = "input" action="/action_page.php">
   <h3 class = "overskrift" >TODOLIST<h3>
-  <input class = "bar" type="text" id="todo" name="todo"><input class = "button" type="submit" value="+"><br>
+  <input class = "bar" type="text" id="todo" name="todo">
+  <span onclick="addEl()" class = "button">Add</span>
 </form>
 
 <div>

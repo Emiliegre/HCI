@@ -17,7 +17,7 @@ Implement a basic todo list in HTML, CSS, and JavaScript.
 It should be possible to: 
 
     Add new todos (as text)
-    Mark todos as completedgit 
+    Mark todos as completed
     Delete todos
     Edit the text on a todo
     Store the data in local storage
