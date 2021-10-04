@@ -1,0 +1,86 @@
+.rectangle {
+    margin-top:55px;
+    height: 500px;
+    width: 800px;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .overskrift{
+      padding-top: 50px;
+  }
+  
+  .input {
+    text-align: center; 
+    
+  }
+
+  .bar {
+    border-radius: 4px;
+    border-color: black;
+  }
+  
+  ul {
+    list-style-type: none;
+    
+  }
+
+  li {
+      padding: 10px;
+      position: relative;
+      width: 545px;
+      margin-left: 77px;
+      text-align: left;
+      
+  }
+  
+  li:hover {
+      background-color: #888;
+  }
+
+  
+
+  .bar{
+      height: 40px;
+      width: 500px;  
+  }
+  
+  .button {
+      background-color:#85AEDE; 
+      color: white;
+      margin-left: 5px;
+      padding-top: 11px;
+      padding-bottom: 14px;
+      padding-left: 18px;
+      padding-right: 18px;
+      height: 45px;
+      width: 45px;
+      border-radius: 4px;
+  }
+
+  .button:hover {
+      cursor: pointer;
+      border-color: black;
+      
+  }
+  
+  .todo-checkbox{
+      background: #888;
+      color: #fff;
+      text-decoration: line-through;
+  }
+
+  .delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;    
+  }
+
+  .delete:hover {
+      cursor: pointer;
+      font-size: large;
+  }
+
