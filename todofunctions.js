@@ -1,14 +1,9 @@
 myStorage = window.localStorage;
 
 function addEl(){
-    let input = document.getElementById("todo");
-    let newToDo = `
-    <div>
-        <input  type="checkbox"
-                class="todo-checkbox"
-                (click)="completeItem()"\>
-        ${input}
-    </div>`;
-    document.getElementsByClassName("rectangle").appendChild(newToDo);
-
+    var input = document.getElementById("todo").value;
+    var txt = document.createTextNode(input); 
+    var newToDo = document.createElement("li");
+    newToDo.appendChild(txt);
+    document.getElementById("todolist").appendChild(newToDo);
 }

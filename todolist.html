@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="todofunctions.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .rectangle {
@@ -61,23 +62,23 @@
 <form class = "input" action="/action_page.php">
   <h3 class = "overskrift" >TODOLIST<h3>
   <input class = "bar" type="text" id="todo" name="todo">
-  <span onclick="addEl()" class = "button">Add</span>
+  <span onclick="addEl()" class = "addBtn">Add</span>
 </form>
-
-<div>
+<ul id="todolist">
+<li>
   <input type="checkbox"
          class="todo-checkbox"
          (click)="completeItem()"/>
   Read the book
-</div>
+</li>
 
-<div>
+<li>
   <input type="checkbox"
          class="todo-checkbox"
          (click)="completeItem()"/>
   call my parents
-</div>
-
+</li>
+</ul>
 
 
 
