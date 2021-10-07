@@ -1,11 +1,23 @@
-var myStorage = window.localStorage;
+
 let todos = [];
 
-function addToDo(){
+setToDoList();
+
+function setToDoList() {
+    let retrievedToDos = JSON.parse(localStorage.getItem("todos"));
+    retrievedToDos.forEach(input => generateToDo(input));
+}
+
+function addToDo() {
+    var input = document.getElementById("todo").value;
+    generateToDo(input);
+}
+
+function generateToDo(input){
     var newToDo = document.createElement("li");
 
     addCheckbox(newToDo);
-    addInput(newToDo);
+    addInput(newToDo, input);
     addDeleteButton(newToDo);
 
     newToDo.className = "aToDo";
@@ -13,7 +25,7 @@ function addToDo(){
     
     document.getElementById("todolist").appendChild(newToDo);
 
-    document.getElementById("newToDo").value = "";
+    document.getElementById("todo").value = "";
 }
 
 function addCheckbox(listElement) {
@@ -22,10 +34,12 @@ function addCheckbox(listElement) {
     listElement.appendChild(chbox);
 }
 
-function addInput(listElement) {
-    var input = document.getElementById("todo").value;
+function addInput(listElement, input) {
+    storeInput(input);
+
     var txt = document.createTextNode(" "+input); 
     listElement.appendChild(txt);
+
 }
 
 function addDeleteButton(listElement) {
@@ -39,5 +53,12 @@ function addDeleteButton(listElement) {
     del.appendChild(x);
     listElement.appendChild(del)
 }
+
+function storeInput(input) {
+    let todos = JSON.parse(localStorage.getItem("todos"));
+    todos.push(input);
+    localStorage.setItem("todos", JSON.stringify(todos));
+}
+
 
 
